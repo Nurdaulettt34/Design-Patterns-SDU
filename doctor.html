@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Doctor Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+  <h2>Doctor Profile</h2>
+  <div class="card doctor-profile">
+  <div class="profile-header">
+    <img src="images/doctor-avatar.jpg" alt="Doctor Avatar" class="avatar" />
+    <div class="profile-info">
+      <h2>Dr. Aliya T.</h2>
+      <p class="specialty">Cardiologist</p>
+      <p class="experience">Experience: 8 years</p>
+    </div>
+  </div>
+
+  <div class="field">
+    <label>Additional Specialties</label>
+    <select multiple>
+      <option>Therapist</option>
+      <option>Dermatologist</option>
+      <option>Neurologist</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label>Consultation Fee</label>
+    <input type="number" placeholder="Enter fee in USD" />
+  </div>
+
+  <div class="field availability">
+    <label>Availability</label>
+    <div class="time-range">
+      <input type="time" /> to <input type="time" />
+    </div>
+    <select class="cel">
+      <option>Mon–Fri</option>
+      <option>Weekends</option>
+      <option>Custom</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label>Communication Preferences</label>
+    <div class="preferences">
+      <label><input type="checkbox" /> Email</label>
+      <label><input type="checkbox" /> Phone</label>
+      <label><input type="checkbox" /> Video Call</label>
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <button class="btn">Change Avatar</button>
+    <button class="btn primary">Update Profile</button>
+    <button class="btn outline">Export Schedule</button>
+  </div>
+</div>
+
+  <div class="card">
+  <h2>Today's Appointments</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Patient</th>
+        <th>Age</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>09:00</td>
+        <td>Ivan Ivanov</td>
+        <td>32</td>
+        <td>
+          <button class="btn success">Finish</button>
+          <button class="btn warning">Skip</button>
+          <button class="btn">Open Card</button>
+        </td>
+      </tr>
+      <tr>
+        <td>10:00</td>
+        <td>Aizhan Bek</td>
+        <td>27</td>
+        <td>
+          <button class="btn success">Finish</button>
+          <button class="btn warning">Skip</button>
+          <button class="btn">Open Card</button>
+        </td>
+      </tr>
+      <tr>
+        <td>14:00</td>
+        <td>Daniyar T.</td>
+        <td>41</td>
+        <td>
+          <button class="btn success">Finish</button>
+          <button class="btn warning">Skip</button>
+          <button class="btn">Open Card</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+  <div class="card">
+  <h2>Schedule Management</h2>
+
+  <!-- Daily schedule -->
+  <h3>Daily Schedule</h3>
+  <table>
+    <thead>
+      <tr><th>Time Slots</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>09:00</td></tr>
+      <tr><td>10:00</td></tr>
+      <tr><td>11:00</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Weekly schedule -->
+  <h3>Weekly Schedule</h3>
+  <p>Mon–Fri: 09:00–17:00</p>
+
+  <!-- Day off selection -->
+  <h3>Mark Day Off</h3>
+  <div class="field">
+    <label>Select Date (dd.mm.yyyy)</label>
+    <input type="date" id="dayOff" />
+  </div>
+  <button class="btn warning" onclick="markDayOff()">Mark Day Off</button>
+</div>
+
+  <div class="card">
+    <h2>Pharmacy / Test Requests</h2>
+    <table>
+      <tr><th>Type</th><th>Name</th><th>Patient</th></tr>
+      <tr><td>Prescription</td><td>Atorvastatin</td><td>Ivan</td></tr>
+    </table>
+    <button class="btn">Add Prescription</button>
+    <button class="btn">Add Test</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Patient Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card patient-profile">
+  <div class="profile-header">
+    <img src="images/patient-avatar.jpg" alt="Patient Avatar" class="avatar" />
+    <div class="profile-info">
+      <h2>Ivan Ivanov</h2>
+      <p class="next-appointment">Next Appointment: <strong>2025-12-10 14:00</strong></p>
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <button class="btn primary">Edit Profile</button>
+    <button class="btn outline">View History</button>
+    <button class="btn danger">Cancel Next Appointment</button>
+  </div>
+</div>
+</div>
+
+<div class="card">
+  <h2>Book Appointment <span>📅</span></h2>
+  <img src="images/calendar.png" alt="Calendar Icon" class="icon" />
+  <div class="field">
+    <label>Specialty</label>
+    <select><option>Cardiologist</option></select>
+  </div>
+  <button class="btn">Book</button>
+</div>
+
+
+  <div class="card">
+  <h2>Book Appointment 📅</h2>
+
+  <div class="field">
+    <label>Specialty</label>
+    <select>
+      <option>Therapist</option>
+      <option>Cardiologist</option>
+      <option>Dermatologist</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label>Doctor</label>
+    <select>
+      <option>Dr. Aliya T.</option>
+      <option>Dr. Timur S.</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label>Available Time</label>
+    <select>
+      <option>2025-12-10 14:00</option>
+      <option>2025-12-11 09:00</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label>Appointment Type</label>
+    <select>
+      <option>In-person</option>
+      <option>Online (Video Call)</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label>Preferred Language</label>
+    <select>
+      <option>Kazakh</option>
+      <option>Russian</option>
+      <option>English</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label>Reason for Visit</label>
+    <textarea placeholder="Describe your symptoms or reason..."></textarea>
+  </div>
+
+  <div class="field">
+    <label>Insurance Provider</label>
+    <select>
+      <option>No Insurance</option>
+      <option>MedLife</option>
+      <option>HealthCare Plus</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label>Reminder Options</label><br>
+    <input type="checkbox" /> Email  
+    <input type="checkbox" /> SMS  
+    <input type="checkbox" /> Push Notification
+  </div>
+
+  <div class="field">
+    <label>Urgency Level</label>
+    <select>
+      <option>Normal</option>
+      <option>Urgent</option>
+    </select>
+  </div>
+
+  <button class="btn primary">Confirm Appointment</button>
+</div>
+
+
+  <div class="card">
+    <h2>My Appointments</h2>
+    <table>
+      <tr><th>Date</th><th>Time</th><th>Doctor</th><th>Status</th></tr>
+      <tr><td>2025-12-08</td><td>10:00</td><td>Dr. Timur</td><td>Pending</td></tr>
+    </table>
+  </div>
+
+  <div class="card notifications">
+  <h2>Notifications 🔔</h2>
+
+  <div class="note">
+    <div class="note-info">
+      <span class="note-title">Doctor Schedule Updated</span>
+      <span class="note-text">Cardiologist available on 2025-12-12</span>
+      <span class="note-date">Received: 2025-12-07</span>
+    </div>
+    <button class="btn outline">Mark as Read</button>
+  </div>
+
+  <div class="note">
+    <div class="note-info">
+      <span class="note-title">New Test Result</span>
+      <span class="note-text">Blood analysis is ready for review</span>
+      <span class="note-date">Received: 2025-12-06</span>
+    </div>
+    <button class="btn outline">Mark as Read</button>
+  </div>
+</div>
+</body>
+</html>

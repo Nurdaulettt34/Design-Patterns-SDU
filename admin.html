@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card admin-menu">
+  <h2>Admin Menu</h2>
+  <div class="toolbar">
+    <button class="btn">Manage Doctors</button>
+    <button class="btn">Manage Patients</button>
+    <button class="btn">Manage Specialties</button>
+    <button class="btn">Manage Pharmacy</button>
+  </div>
+</div>
+
+<div class="card doctor-management">
+  <h2>Doctor Management</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Specialty</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Dr. Aliya T.</td>
+        <td>Cardiologist</td>
+        <td><span class="badge active">Active</span></td>
+        <td>
+          <button class="btn outline">Edit</button>
+          <button class="btn danger">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button class="btn primary">Add Doctor</button>
+</div>
+
+<div class="card statistics">
+  <h2>Statistics</h2>
+  <div class="stats-grid">
+    <div class="stat-box">
+      <h3>Appointments Today</h3>
+      <p class="stat-number">3</p>
+    </div>
+    <div class="stat-box">
+      <h3>New Patients</h3>
+      <p class="stat-number">2</p>
+    </div>
+  </div>
+  <button class="btn outline">Download Reports</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login | Hospital System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>Hospital System Login</h1>
+    <div class="field">
+      <label for="role">Select Role</label>
+      <select id="role">
+        <option value="">Choose...</option>
+        <option value="patient">Patient</option>
+        <option value="doctor">Doctor</option>
+        <option value="admin">Admin</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="username">Username</label>
+      <input type="text" id="username" />
+    </div>
+    <div class="field">
+      <label for="password">Password</label>
+      <input type="password" id="password" />
+    </div>
+    <button class="btn" onclick="login()">Login</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
